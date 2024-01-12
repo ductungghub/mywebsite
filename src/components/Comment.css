@@ -1,0 +1,94 @@
+/* styles.module.css */
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.comment-wrapper {
+  margin-bottom: 20px;
+}
+
+.comment {
+  margin-bottom: 15px;
+}
+
+input {
+  border: none;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.commentContent {
+  font-size: 18px;
+  font-weight: 400;
+  border: 0.1px dashed #333;
+  padding: 4px 2px;
+  margin-top: 20px;
+  word-wrap: break-word;
+}
+
+.createComment {
+  background-color: rgb(19, 0, 77);
+  color: white;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 0px;
+}
+
+.deleteComment {
+  background-color: rgb(201, 0, 0);
+  color: white;
+  outline: none;
+  font-size: 14px;
+  padding: 2px 8px;
+}
+
+.replySpan {
+  background-color: blue;
+  color: white;
+  outline: none;
+  font-size: 14px;
+  padding: 2px 8px;
+}
+
+.flex {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.deleteComment::after {
+  float: right;
+}
+
+.deleteComment:hover {
+  cursor: pointer;
+}
+
+.reply {
+  margin-bottom: 5px;
+  display: flex;
+  background-color: #f3f3f3;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.replyContent {
+  width: 90%;
+  word-wrap: break-word;
+}
+
+.deleteReply {
+  float: right;
+}
+
+.reply-input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

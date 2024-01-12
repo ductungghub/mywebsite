@@ -1,0 +1,98 @@
+.about {
+  max-width: 1340px;
+  padding: 10px 50px;
+  background-color: aliceblue;
+  margin-top: 38px;
+  display: flex;
+  gap: 1rem;
+}
+
+.skill {
+  margin-top: -10px;
+  padding-left: 50px;
+  margin-left: -50px;
+  width: 312px;
+  gap: 2rem;
+  font-weight: bold;
+  background-color: #131111;
+  color: white;
+  padding-top: 40px;
+}
+
+.skill-title,
+.certificate-title,
+.project-title {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+
+.certificate-title,
+.project-title {
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.ul-skill,
+.ul-certificate,
+.ul-project {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ul-skill li,
+.ul-certificate li .ul-project li {
+  padding-top: 10px;
+}
+
+.li-main {
+  list-style: decimal-leading-zero;
+}
+
+.li-main a {
+  text-decoration: underline;
+  color: rgb(135, 119, 208);
+}
+
+.li-cer-main {
+  list-style: decimal-leading-zero;
+}
+
+.li-cer-main a {
+  color: rgb(135, 119, 208);
+}
+
+.about-wrapper {
+  border-right: 2px dashed rgb(180, 180, 180);
+  display: flex;
+  flex-direction: column;
+  max-width: 776px;
+  justify-content: center;
+  align-items: center;
+}
+.profile-image {
+  width: 555px;
+}
+
+.about-content p {
+  margin-top: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  color: rgb(28, 43, 43);
+}
+
+.name {
+  margin: 20px 0px;
+  font-size: smaller;
+}
+
+.slide-container {
+  max-width: 124px;
+  margin: 0 auto;
+}
+
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}

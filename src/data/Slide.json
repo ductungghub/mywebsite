@@ -1,0 +1,16 @@
+{
+  "slides": [
+    {
+      "src": "/me.jpg",
+      "alt": "Image 1 for carousel"
+    },
+    {
+      "src": "/hanam.jpg",
+      "alt": "Image 2 for carousel"
+    },
+    {
+      "src": "/haui2.jpg",
+      "alt": "Image 3 for carousel"
+    }
+  ]
+}

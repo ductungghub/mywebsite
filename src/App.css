@@ -1,0 +1,24 @@
+#root {
+  background-color: #131111;
+  height: auto;
+}
+
+.page {
+  max-width: 1340px;
+  color: #fff;
+  padding: 10px 50px;
+}
+
+header {
+  min-height: 48px;
+  width: 262px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  background-color: #131111;
+  z-index: 1000;
+  margin-left: 50px;
+}

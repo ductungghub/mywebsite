@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+  font-size: 100%;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}

@@ -1,0 +1,11 @@
+type Reply @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  content: String
+  commentID: ID! @index(name: "byComment")
+}
+
+type Comment @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  content: String
+  Replies: [Reply] @hasMany(indexName: "byComment", fields: ["id"])
+}
