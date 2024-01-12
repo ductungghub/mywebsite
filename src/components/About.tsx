@@ -2,8 +2,22 @@ import './About.css';
 
 import { Slider } from '../components/Slider';
 import { slides } from '../data/Slide.json';
+import Comment from './Comment';
+import { useState } from 'react';
 
 export default function About() {
+  const [numComments, setNumComments] = useState<number>(0);
+  const yourEmail = 'ductung300@gmail.com';
+
+  const copyToClipboard = () => {
+    const textField = document.createElement('textarea');
+    textField.innerText = yourEmail;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand('copy');
+    textField.remove();
+    alert('Email copied to clipboard!');
+  };
   return (
     <div className="about">
       <div className="skill">
@@ -46,6 +60,29 @@ export default function About() {
         </ul>
 
         <h2 className="name">Nguyễn Đức Tùng</h2>
+
+        <aside className="aside">
+          <h2 className="aside-title">Email:</h2>
+          <div className="aside-wrapper">
+            <p>{yourEmail}</p>
+            <button style={{ background: '#ccc' }} onClick={copyToClipboard}>
+              Copy
+            </button>
+          </div>
+        </aside>
+        <aside className="soc">
+          <div className="soc-title">Social Link</div>
+          <nav className="soc-menu">
+            <ul className="soc-menu-list">
+              <li className="soc-menu-item">
+                <a href="https://github.com/ductungghub">Github</a>
+              </li>
+              <li className="soc-menu-item">
+                <a href="https://www.facebook.com/ndtzenbon03">Facebook</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
       </div>
 
       <div className="about-wrapper">
@@ -56,6 +93,7 @@ export default function About() {
             thú với cơ hội phát triển và bổ sung văn hóa trong môi trường làm
             việc Nhật Bản. Quan tâm đến kiểm thử phần mềm và các Framework mới.
           </p>
+
           <p>
             Trong những năm học tại đại học, niềm đam mê của tôi đã tập trung
             vào phát triển web và tiếng Nhật.
@@ -65,15 +103,14 @@ export default function About() {
             vời để phát triển kỹ năng chuyên môn của mình và đồng thời làm giàu
             thêm kiến thức văn hóa.
           </p>
-          <p>
-            Ngoài ra, sở thích của tôi là kiểm thử phần mềm và theo đuổi những
-            Framework mới trong phát triển web.
-          </p>
           <p></p>
         </div>
       </div>
 
-      <div>1月13日</div>
+      <div>
+        <p> 1月13日</p>
+        <Comment setNumComments={setNumComments} />
+      </div>
     </div>
   );
 }

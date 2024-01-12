@@ -12,22 +12,22 @@ function App() {
   return (
     <Router>
       <header className="header-main">
-        <a className="site-title" href="/me">
-          About me
+        <a className="site-title" href="/">
+          HOME
         </a>
-        <a href="/">Home</a>
+        <a href="/haui">HAUI</a>
         <div style={{ color: 'white', fontWeight: '200' }}>
           {month}月{day}日
         </div>
       </header>
       <div className="page">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/haui" element={<Home />} />
         </Routes>
       </div>
 
       <Routes>
-        <Route path="/me" element={<About />} />
+        <Route path="/" element={<About />} />
       </Routes>
     </Router>
   );

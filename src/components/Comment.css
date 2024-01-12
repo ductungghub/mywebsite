@@ -1,11 +1,11 @@
 /* styles.module.css */
 
 .container {
-  width: 400px;
+  width: 300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-right: 10px;
 }
 
 .comment-wrapper {

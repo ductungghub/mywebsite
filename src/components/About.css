@@ -1,6 +1,7 @@
 .about {
-  max-width: 1340px;
-  padding: 10px 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
   background-color: aliceblue;
   margin-top: 38px;
   display: flex;
@@ -62,12 +63,17 @@
   color: rgb(135, 119, 208);
 }
 
+.li-cer-main a:hover {
+  cursor: default;
+}
+
 .about-wrapper {
+  z-index: 1000;
   border-right: 2px dashed rgb(180, 180, 180);
   display: flex;
   flex-direction: column;
   max-width: 776px;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 .profile-image {
@@ -95,4 +101,30 @@
   padding: 1rem 0;
   font-size: 3.5rem;
   text-align: center;
+}
+
+aside {
+  font-size: 12px;
+}
+
+.aside-title,
+.soc-title {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 12px;
+}
+
+.aside-wrapper,
+.soc-menu-item {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.soc-menu-item {
+  text-decoration: underline;
+}
+
+.aside-wrapper button {
+  padding: 0.3rem 0.5rem;
 }
