@@ -103,7 +103,7 @@ export default function About() {
             vời để phát triển kỹ năng chuyên môn của mình và đồng thời làm giàu
             thêm kiến thức văn hóa.
           </p>
-          <p></p>
+          <p style={{ display: 'none' }}>{numComments}</p>
         </div>
       </div>
 
